@@ -38,17 +38,18 @@ void swap(int &a, int &b)
 
 int main()
 {
-    int *a, *b, n;
-    cout<<"\nEnter total number of elements => ";
-    cin>>n;
+    int *a, *b; //2. n; //1. n=10000
+    //2. cout<<"\nEnter total number of elements => ";
+    //2. cin>>n;
 
     a = new int[n];
     b = new int[n];
 
-    cout<<"\nEnter elements => ";
+    //2. cout<<"\nEnter elements => ";
     for(int i = 0; i < n; i++)
     {
-        cin >> a[i];
+        //2. cin >> a[i];
+        //1. a[i]=rand() % 10000
         b[i] = a[i]; // copy for sequential
     }
 
